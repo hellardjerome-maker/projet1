@@ -10,6 +10,6 @@ name: Afficher un message
 runs-on: ubuntu-latest
 steps:
 - name: Checkout du code
-uses: actions/checkout@v4
+  uses: actions/checkout@v4
 - name: Afficher "Hello, World!"
-run: echo "Bonjour, monde ! Mon premier workflow"
+  run: echo "Bonjour, monde ! Mon premier workflow"
