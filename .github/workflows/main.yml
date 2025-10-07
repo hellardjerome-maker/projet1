@@ -1,15 +1,19 @@
 name: Workflow de test
+
+
 on:
-push:
-branches: [ main ]
-pull_request:
-branches: [ main ]
+ push:
+  branches: [ main ]
+ pull_request:
+  branches: [ main ]
+
 jobs:
-build:
-name: Afficher un message
-runs-on: ubuntu-latest
-steps:
-- name: Checkout du code
-  uses: actions/checkout@v4
-- name: Afficher "Hello, World!"
-  run: echo "Bonjour, monde ! Mon premier workflow"
+ build:
+  name: Afficher un message
+  
+    runs-on: ubuntu-latest
+  steps:
+   - name: Checkout du code
+     uses: actions/checkout@v4
+   - name: Afficher "Hello, World!"
+     run: echo "Bonjour, monde ! Mon premier workflow"
